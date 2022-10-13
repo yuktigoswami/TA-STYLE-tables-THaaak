@@ -1,0 +1,493 @@
+/* Custom reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom styles */
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Variables */ 
+:root {
+    --primary:  rgb(243 64 0);
+}
+/* Container */ 
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+
+/* Flex */ 
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
+
+/* Btn */
+button {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 11px ;
+    font-size: 14px;
+    border: 0;
+    margin-left: 35px;
+}
+.hero button, .thought button {
+    color: #fff;
+    background-color: var(--primary);
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    margin-left: 43%;
+}
+.program button {
+    color: var(--primary);
+    font-size: 16px;
+    border: 0;
+    background-color: #fff;
+    margin-left: 73px;
+    padding: 3px;
+}
+.classes .col-3 button {
+    padding: 25px 90px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-left: 0;
+}
+.classes .col-3-1 button {
+    margin-left: 0;
+    padding: 15px 20px;
+}
+form button {
+    margin-left: 0;
+}
+/* Navbar */
+.navbar {
+    padding: 15px 182px;
+    background-color: rgba(114, 112, 112, 0.462);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.brand {
+    font-size: 32px;
+    font-weight: 900;
+}
+.brand strong {
+    color: #fff;
+}
+.brand span {
+    color: var(--primary);
+}
+.nav-menu-item {
+    margin-left: 35px;
+}
+.nav-menu-item a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+.nav-menu-item .active {
+    color: var(--primary);
+}
+
+.hero {
+    height: 115vh;
+}
+.hero h1 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    margin-top: -44%;
+}
+.hero h2 {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.hero span {
+    color: var(--primary);
+}
+
+/* Program */
+.program h2 {
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 10%;
+}
+.program span {
+    color: var(--primary);
+}
+.program img {
+    margin-left: 48%;
+    margin-top: 25px;
+}
+.program p{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(158, 155, 155);
+    padding: 0 20%;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 5%;
+} 
+.col-1, .col-2 {
+    width: 632px;
+    margin-left: 110px;
+    padding-bottom: 100px;
+}
+.col-2 {
+    margin-right: 110px;
+}
+.col-1 p, .col-2 p {
+    text-align: left;
+    padding-left: 75px;
+    padding-right: 0;
+    padding-bottom: 2px;
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+.program .col-1 span, .col-2 span {
+    color: rgb(16, 71, 253);
+}
+.program .col-1 h2, .col-2 h2 {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 77px;
+    padding-right: 0;
+    padding-top: 17px;
+}
+.row {
+    margin-top: 30px;
+}
+
+/* Thought */
+.thought {
+    background-image: url("assets/cta-bg.jpg");
+}
+.thought h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+.thought span {
+    color: var(--primary);
+}
+.thought p {
+    color:antiquewhite;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.thought article {
+    padding: 90px 130px;
+}
+
+/* Classes */
+.classes {
+    padding-bottom: 150px;
+}
+.classes h2, .expert h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+}
+.classes span, .expert span {
+    color: var(--primary);
+}
+.classes img, .expert img{
+    margin-left: 48%;
+    margin-top: 20px;
+}
+.classes p, .expert p {
+    font-size: 17px;
+    text-align: center;
+    color:  rgb(158, 155, 155);
+    padding: 0 29%;
+    margin-top: 20px;
+    padding-bottom: 70px;
+}
+.box {
+    width: 350px;
+    height: 80px;
+    box-shadow: 0 1px 14px 0 #e1d7d7;
+    margin-left: 20;
+    padding-left: 25px;
+    padding-top: 9px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+.classes .box h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.box1 h3 {
+    margin-right: 82px;
+    color: var(--primary);
+}
+.box-1 h3 {
+    margin-right: 55px;
+}
+.box-1-1 h3 {
+    margin-right: 74px;
+}
+.box-1-2 h3 {
+    margin-right: 58px;
+ }
+.classes .box img {
+    margin-left: 0;
+    margin-top: 0;
+}
+.classes .col-3-1 h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    margin-top: 28px;
+}
+.classes .col-3-1 p {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(158, 155, 155);
+    padding: 0;
+    text-align: left;
+    margin-bottom: 28px;
+}
+.col-3 {
+    margin-left: 176px;
+    margin-bottom: 37px;
+}
+.col-3-1 {
+    width: 760px;
+    margin-right: 176px;
+}
+.col-3-1 img {
+    margin-left: 0;
+    border-radius: 8px;
+}
+
+/* Schedule */
+.schedule {
+    padding: 82px 0;
+    background-image: url("assets/schedule-bg.jpg");
+    background-position: 100%;
+}
+.schedule h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.schedule img {
+    text-align: center;
+    margin-left: 48%;
+}
+.schedule p {
+    font-size: 17px;
+    color: rgb(225, 225, 229);
+    text-align: center;
+    padding: 22px 290px;
+}
+.schedule h2 span {
+    color: var(--primary);
+}
+table {
+    border: 1px solid;
+    font-size: 17px;
+    text-align: center;
+    margin-left: 154px;
+    margin-top: 80px;
+    color: rgb(225, 225, 229);
+}
+table caption span {
+    color: var(--primary);
+}
+caption {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+th, 
+td {
+    border: 1px solid;
+    padding: 40px 58px;
+}
+
+/* Expert */ 
+.expert h3 {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.expert .col-4 h2, .col-4-1 h2, .col-4-2 h2 {
+    font-size: 23px;
+    font-weight: 800;
+    color: black;
+}
+
+.expert nav a {
+    margin-left: 15px;
+    color: black;
+
+}
+.trainer {
+    width: 328px;
+    height: 494px;
+    box-shadow: 0 1px 14px 0 #e1d7d7;
+    border-radius: 6px;
+}
+.expert .trainer h2 {
+    padding-top: 10px;
+    text-align: left;
+    margin-left: 20px;
+}
+.expert .trainer p {
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 20px;
+    margin-top: 8px;
+    margin-left: 20px;
+    padding-right: 0;
+}
+.trainer img{
+    margin-left: 20px;
+}
+.trainer nav .f {
+    margin-left: 20px;
+}
+.col-4 {
+    margin-left: 225px;
+    padding-bottom: 100px;
+}
+.col-4-1 {
+    padding-bottom: 100px;
+}
+.col-4-2 {
+    margin-right: 225px;
+    padding-bottom: 100px;
+}
+
+/* Map */
+.map {
+    padding-top: 50px;
+}
+
+form {
+    width: 100%;
+    padding: 22px;
+    background-color: #fff;
+    border-radius: 6px;;
+}
+.form-control, .form-control-2 {
+    border: 1px solid rgb(221, 218, 218);
+    margin-bottom: 25px;
+    padding: 11px;
+}
+.form-control-2 {
+    width: 100%;
+}
+.col-5 {
+    width: 45%;
+    height: 600px;
+}
+.col-5-1 {
+    width: 55%;
+    background-image: url("assets/contact-bg.jpg");
+    height: 555px;
+    margin-bottom: 42px;
+}
+.form-box {
+    padding: 90px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+}
+footer small {
+    font-size: 16px;
+    color: rgb(158, 155, 155);
+    margin-left: 35%;
+    padding-bottom: 50px;
+}
+footer span {
+    color: var(--primary);
+}
